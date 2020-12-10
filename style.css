@@ -9,11 +9,29 @@
     font-weight: 300;
     text-align: center;
     color: #5f0a70;
-    background: #f4ceff;
+    background: #f5e2fa;
     height: 30vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7em;
+    background: #f4ceff;
+    display: none;
+}
+.result p {
+    color: #333;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.result span{
+    font-size: 3em;
+    color: #5f0a70;
+    margin: 0 .3em;
 }
 .container {
     display: flex;

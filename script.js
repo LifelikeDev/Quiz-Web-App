@@ -1,6 +1,7 @@
 const correctAnswers = ["B", "C", "A", "D", "B"];
 const form = document.querySelector('form');
 const formOpt = document.querySelector('.form-option');
+const result = document.querySelector('.result');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -17,5 +18,6 @@ form.addEventListener('submit', e => {
             score += 20;
         }
     });
-    console.log(score);
+    result.querySelector('span').textContent = `${score}%`;
+    result.style.display = 'flex';
 });
