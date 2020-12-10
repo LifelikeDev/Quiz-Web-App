@@ -1,0 +1,73 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+.intro {
+    font-size: 3em;
+    font-weight: 300;
+    text-align: center;
+    color: #5f0a70;
+    background: #f4ceff;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+}
+.form-container {
+    background: #5f0a70;
+    max-height: 100%;
+    padding: 2em;
+    color: white;
+}
+.form-heading {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+    margin-bottom: 1em;
+}
+.form-question {
+    padding: 0.5em;
+}
+.form-question p {
+    font-size: 1em;
+    letter-spacing: 1px;
+    padding: 0.3em;
+}
+.form-option {
+    margin-left: 1.5em;
+    clear: both;
+    cursor: pointer;
+}
+.form-option input, 
+.form-option label {
+    margin: .4em .2em .5em;
+    color: #ffffffaa;
+}
+.form-option input {
+    font-size: 1.5em;
+    padding: 1em;
+}
+.submit {
+    /* display: flex;
+    max-width: 3em; */
+    margin: 1em 10em 0;
+    justify-content: center;
+}
+.submit input {
+    font-size: 1em;
+    padding: .5em 1.2em;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 0.4em;
+}
+.submit input:focus, 
+.submit input:hover {
+    border-style: none;
+    transform: scale(1.05);
+}
