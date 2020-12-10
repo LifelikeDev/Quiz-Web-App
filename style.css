@@ -74,7 +74,7 @@
     font-size: 1.5em;
 }
 .submit {
-    margin: 2em 10em;
+    margin: 2em 16em;
     justify-content: center;
 }
 .submit input {
@@ -91,9 +91,10 @@
 .submit input:hover {
     border-style: none;
     transform: scale(1.05);
+    background: #e8b3f3;
 }
 .footer {
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: 300;
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -108,7 +109,9 @@
 .footer p {
     margin: .5em 0;
 }
-
+.footer .copy {
+    font-size: .8em;
+}
 
 @media(max-width: 650px) {
     body {
@@ -128,11 +131,19 @@
         text-align: center;
     }
 }
-/* @media(max-width: 430px) {
-    .container {
-        width: 100%;
+@media(max-width: 540px) {
+    .submit {
+        margin: 2em 13em;
     }
-} */
+}
+@media(max-width: 500px) {
+    .submit {
+        margin: 2em 12em;
+    }
+    .footer {
+        font-size: .8em;
+    }
+}
 @media(max-width: 420px) {
     .intro {
         font-size: 1.5em;
@@ -148,6 +159,11 @@
     .form-question {
         font-size: .9em;
         margin: 0 1.3em;
+    }
+}
+@media(max-width: 360px) {
+    .submit {
+        margin: 2em 10em;
     }
 }
 @media(min-width: 320px) {
