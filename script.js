@@ -18,6 +18,20 @@ form.addEventListener('submit', e => {
             score += 20;
         }
     });
-    result.querySelector('span').textContent = `${score}%`;
+
+    // displaying the results...
+    scrollTo(0, 0);
     result.style.display = 'flex';
+
+    // animating the score...
+    let output = 0;
+    const timer = setInterval(() => {
+        result.querySelector('span').textContent = `${output}%`;
+        
+        if(output === score) {
+            clearInterval(timer);
+        } else {
+            output++;
+        }
+    }, 1);
 });
